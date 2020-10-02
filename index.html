@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="flaticon (2).svg">
+    <title>Dark/Light Toggler</title>
+</head>
+
+<body>
+   <div class="theme-switch-wrapper">
+       <span id="toggler">
+           <span class="toggle-text">Light mode</span>
+           <i class="fas fa-sun"></i>
+       </span>
+       <label class="theme-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+    </label>  
+   </div>
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+    <section id="home">
+        <h1>Custom Title Here</h1>
+        <h3>This is just for practise!</h3>
+    </section>
+    <section id="about">
+        <h1>Undraw Illustrations</h1>
+        <div class="projects-container">
+            <div class="image-container">
+                <h2>Web Innovation</h2>
+                <img src="./photos/Photograph-light.svg" alt="" id="image1"></img>
+            </div>
+            <div class="image-container">
+                <h2>Problem Solving</h2>
+                <img src="./photos/Booking-light.svg" alt="" id="image2"></img>
+            </div>
+            <div class="image-container">
+                <h2>High Concept</h2>
+                <img src="./photos/LandingPage-light.svg" alt="" id="image3"></img>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Buttons</h1>
+        <div class="buttons">
+            <button class="primary">Primary</button>
+            <button class="secondary">Secondary</button>
+            <button class="primary" disabled>Disabled</button>
+            <button class="outline">Outline</button>
+            <button class="secondary outline">Alt Outline</button>
+            <button class="outline" disabled>Disabled</button>
+        </div>
+        <textarea id="textarea">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati incidunt, dolores dolor ducimus, fuga sit praesentium placeat neque velit assumenda omnis minus magnam quos quis facere mollitia similique nulla!atque fugit aliquid quam distinctio nemo vero ipsam voluptatum excepturi error odio hi my name is mounvi and you have a good day!Ok bye</textarea>
+        </button>
+    </section>
+    <section id="contact">
+        <h1>Contact me here at:</h1>
+        <div>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-medium"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
