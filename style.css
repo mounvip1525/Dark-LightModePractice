@@ -114,7 +114,7 @@ a:hover,a:focus{
 }
 
 section{
-    height:90vh;
+    height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -145,8 +145,8 @@ h3{
 }
 img{
     display:flex;
-    height:300px;
-    width:300px;
+    height:18.5rem;
+    width:18.5rem;
 }
 .buttons{
     display:flex;
@@ -155,8 +155,9 @@ img{
 button{
     margin:10px;
     border-radius:7px;
-    height:35px;
-    width:85px;
+    height:60%;
+    width:30%;
+    padding:1px;
     outline:none;
     border:none;
 }
@@ -205,6 +206,9 @@ textarea{
     box-shadow:var(--box-shadow);
     padding:20px;
 }
+.icons{
+    display:flex;
+}
 .fab {
     margin-top:20px;
     font-size: 90px;
@@ -215,4 +219,26 @@ textarea{
   
   .fab:hover {
     color: var(--on-background);
+  }
+  @media screen and (max-width:600px){
+    .theme-switch-wrapper{
+        top:40px;
+        right:150px;
+    }section{
+        height:40vh;
+    }
+      h1{
+          font-size:50px;
+      }
+      img{
+          height:100px;
+          width:100px;
+      }
+      h2,h3,nav{
+          font-size:10px;
+      }
+      .fab{
+          font-size:20px;
+          display:inline-block;
+      }
   }
