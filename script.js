@@ -11,32 +11,23 @@ image1.src=`photos/Booking-${mode}.svg`;
 image2.src=`photos/LandingPage-${mode}.svg`;
 image3.src=`photos/Photograph-${mode}.svg`;
 }
-function darkMode() {
-    nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    textarea.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-    toggler.children[0].textContent = 'Dark Mode';
-    toggler.children[1].classList.replace('fa-sun', 'fa-moon');
-    imageMode('dark');
-  }
-  
-  // Light Mode Styles
-  function lightMode() {
-    nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-    textArea.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-    toggler.children[0].textContent = 'Light Mode';
-    toggler.children[1].classList.replace('fa-moon', 'fa-sun');
-    imageMode('light');
-  }
+function DarkLightModeToggler(isDark){
+    nav.style.backgroundColor = isDark? 'rgb(0 0 0 / 50%)':'rgb(255 255 255 / 50%)';
+    textarea.style.backgroundColor = isDark? 'rgb(255 255 255 / 50%)':'rgb(0 0 0 / 50%)';
+    toggler.children[0].textContent = isDark? 'Dark Mode':'Light Mode';
+    isDark? toggler.children[1].classList.replace('fa-sun', 'fa-moon'): toggler.children[1].classList.replace('fa-moon', 'fa-sun');
+    isDark? imageMode('dark'):imageMode('light');
+}
 function switchTheme(event){
     if(event.target.checked){
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
-        darkMode();
+        DarkLightModeToggler(true);
     }
     else{
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
-        lightMode();
+        DarkLightModeToggler(false);
     }
 }
 toggleSwitch.addEventListener('change',switchTheme);
@@ -46,6 +37,6 @@ if(currentTheme){
     if(currentTheme==="dark")
     {
         toggleSwitch.checked=true;
-        darkMode();
+        DarkLightModeToggler(true);
     }
 }

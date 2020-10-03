@@ -131,26 +131,26 @@ h3{
 }
 .projects-container{
     display:flex;
+    margin:0 10%;
 }
 .image-container{
     border-radius: 7px;
     border:none;
     width:auto;
-    border-radius: 7px;
     border:0.5px solid var(--secondary-color);
-    margin-right:15px;
+    margin:5px;
     padding:5px;
     background:var(--background);
     box-shadow: var(--box-shadow);
 }
 img{
-    display:flex;
-    height:18.5rem;
-    width:18.5rem;
+    height:90%;
+    width:90%;
 }
 .buttons{
     display:flex;
     flex-direction:row;
+    margin:0 10%;
 }
 button{
     margin:10px;
@@ -211,7 +211,7 @@ textarea{
 }
 .fab {
     margin-top:20px;
-    font-size: 90px;
+    font-size: 250%;
     margin-right: 50px;
     cursor: pointer;
     color:var(--primary-color);
@@ -226,19 +226,9 @@ textarea{
         right:150px;
     }section{
         height:40vh;
-    }
-      h1{
+    }h1{
           font-size:50px;
-      }
-      img{
-          height:100px;
-          width:100px;
-      }
-      h2,h3,nav{
+      }h2,h3,nav{
           font-size:10px;
-      }
-      .fab{
-          font-size:20px;
-          display:inline-block;
       }
   }
